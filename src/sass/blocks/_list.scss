@@ -1,0 +1,80 @@
+.list {
+    display: grid;
+    grid-template: repeat(2, 480px) / repeat(3, 1fr);
+    &__divider {
+        @include divider;
+    }
+    &__square {
+        padding: 95px 70px 0 70px;
+        &_first {
+            background: #22356F;
+            &:hover {
+                background-image: 
+                    linear-gradient(to top, rgba(34, 53, 111, 0.6), rgba(34, 53, 111, 0.6)),
+                    url('../../img/list/PhysicalHealth.jpg');
+                @include background;
+            }
+        }
+        &_second {
+            background: #0052C1;
+            &:hover {
+                background-image: 
+                    linear-gradient(to top, rgba(0, 82, 193, 0.6), rgba(0, 82, 193, 0.6)),
+                    url('../../img/list/MentalHealth.jpg');
+                @include background;
+            }
+        }
+        &_third {
+            background: #76B58B;
+            &:hover {
+                background-image: 
+                    linear-gradient(to top, rgba(118, 181, 139, 0.6), rgba(118, 181, 139, 0.6)),
+                    url('../../img/list/Nutrition.png');
+                @include background;
+            }
+        }
+        &_fourth {
+            background: #62D0DF;
+            &:hover {
+                background-image: 
+                    linear-gradient(to top, rgba(98, 208, 223, 0.6), rgba(98, 208, 223, 0.6)),
+                    url('../../img/list/Gymnastics.jpg');
+                @include background;
+            }
+        }
+        &_fifth {
+            background: #DEE1FF;
+            &:hover {
+                background-image: 
+                    linear-gradient(to top, rgba(222, 225, 255, 0.6), rgba(222, 225, 255, 0.6)),
+                    url('../../img/list/Crossfit.jpg');
+                @include background;
+            }
+        }
+        &_sixth{
+            background: #8F00FF;
+            &:hover {
+                background-image: 
+                    linear-gradient(to top, rgba(143, 0, 255, 0.6), rgba(143, 0, 255, 0.6)),
+                    url('../../img/list/Aerobics.jpg');
+                @include background;
+
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        padding-top: 30px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: -0.006em;
+        color: #FFFFFF;
+        padding-left: 25px;
+        &::before {
+            @include circle;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}

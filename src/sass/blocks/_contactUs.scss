@@ -1,0 +1,28 @@
+.contactUs {
+    flex-direction: row-reverse;
+    background: #22356F;
+    &__img {
+        background: url('../../img/ContactUs.png') center (center/cover) no-repeat;
+    }
+    &__title {
+        color: #FFFFFF;
+    }
+    &__heading {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        padding-bottom: 75px;
+    }
+    &__paragraph {
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 56px;
+        letter-spacing: -0.005em;
+        color: #FFFFFF;
+    }
+    &__btn {
+        color: #62D0DF;
+    }
+}

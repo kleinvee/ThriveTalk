@@ -1,0 +1,66 @@
+.aboutUs {
+    background: #E5E5E5;
+    padding: 150px 0 120px 0;
+    &__title {
+        position: absolute;
+        left: 106px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.06em;
+        color: #22356F;
+    }
+    &__paragraph {
+        margin: 0 auto;
+        padding-bottom: 76px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.005em;
+        color: #22356F;
+        width: 592px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: rgba(34, 53, 111, 0.5);
+        padding-bottom: 28px;
+    }
+    &__squares {
+        display: grid;
+        grid-template: 360px / repeat(4, 1fr);
+        
+    }
+    &__divider {
+        @include divider;
+    }
+    &__square {
+        padding: 70px 52px 0 52px;
+        &_pink {
+            background: #FFE2DE;
+        }
+        &_green {
+            background: #C4E769;
+        }
+        &_light-blue {
+            background: #62D0DF;
+        }
+        &_blue {
+            background: #0052C1;
+        }
+    }
+    &__item {
+        position: relative;
+        padding-top: 30px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: -0.006em;
+        color: #FFFFFF;
+        padding-left: 25px;
+        &::before {
+            @include circle;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.infoCards {
+    padding: 22px 0 40px 0;
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, 1fr);
+    &__wrapper {
+        padding: 55px 105px 37px 105px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: -0.03em;
+        color: #22356F;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: -0.03em;
+        color: rgba(34, 53, 111, 0.5);
+    }
+}

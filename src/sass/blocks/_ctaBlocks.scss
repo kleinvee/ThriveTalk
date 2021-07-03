@@ -1,0 +1,33 @@
+.ctaBlock {
+    display: flex;
+    height: 800px;
+    &__img {
+        flex-basis: 480px;
+    }
+    &__text {
+        flex-basis: calc(100% - 480px);
+        position: relative;
+        padding: 103px 106px 50px 106px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        padding-bottom: 225px;
+    }
+    &__paragraph {
+        font-size: 36px;
+    }
+    &__btn {
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        transition: all 0.4s;
+        &:hover {
+            font-size: 20px; 
+        }
+    }
+}

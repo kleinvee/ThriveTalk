@@ -1,0 +1,28 @@
+.whyThrive {
+    display: flex;
+    background-color: $main-color;
+    &__text {
+        padding: 151px 179px 95px 179px;
+        color: #FFFFFF;
+        width: calc( 100% - 525px);
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 27px;
+        letter-spacing: -0.006em;
+        padding-bottom: 75px;
+    }
+    &__descr {
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 300;
+        span {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    &__img {
+        flex-basis: 525px;
+        background: url('../../img/WhyThrive_img.png') center (center/cover) no-repeat;
+    }
+}
