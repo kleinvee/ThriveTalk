@@ -1,5 +1,5 @@
 .contactUs {
-    flex-direction: row-reverse;
+    grid-template: 800px / auto 480px;
     background: #22356F;
     &__img {
         background: url('../../img/ContactUs.png') center (center/cover) no-repeat;

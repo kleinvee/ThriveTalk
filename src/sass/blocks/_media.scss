@@ -1,0 +1,293 @@
+@media (max-width: 1200px) {
+    .whyThrive {
+        &__text {
+            padding: 110px 70px 70px 179px;
+            width: 100%;
+        }
+    }
+    .aboutUs {
+        padding-top: 120px;
+        &__title {
+            left: 50px;
+        }
+        &__paragraph {
+            width: 535px;
+        }
+        &__square {
+            padding: 42px;
+        }
+        &__item {
+            font-size: 24px;
+            padding-left: 16px;
+        }
+    }
+    .infoCards {
+        &__wrapper {
+            padding: 55px 50px 37px 50px;
+        }
+    }
+    .ctaBlock {
+        grid-template: 600px / 360px auto;
+        &__paragraph {
+            font-size: 28px;
+        }
+        &__text {
+            padding: 64px 75px 50px 75px;
+        }
+    }
+    .contactUs {
+        grid-template: 600px / auto 360px;
+        &__heading {
+            font-size: 56px;
+            padding-bottom: 26px;
+        }
+        &__paragraph {
+            font-size: 30px;
+        }
+    }
+    .footer {
+        grid-template: 260px 80px / 380px auto;
+        &__info {
+            padding-top: 40px;
+            &-title {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        .header {
+            padding: 27px 40px 0 40px;
+        }
+        &__content {
+            margin-left: 40px;
+        }
+    }
+    .whyThrive {
+        &__text {
+            padding: 60px 45px 40px 40px;
+        }
+        &__title {
+            padding-bottom: 50px;
+        }
+    }
+    .aboutUs {
+        padding-top: 50px;
+        &__title {
+            position: static;
+            text-align: center;
+        }
+        &__paragraph {
+            padding-top: 50px;
+        }
+        &__square {
+            padding: 12px;
+        }
+    }
+    .list {
+        &__square {
+            padding: 25px;
+        }
+    }
+    .infoCards {
+        &__title {
+            font-size: 26px;
+        }
+        &__wrapper {
+            padding: 50px 30px 37px 30px;
+        }
+    }
+    .ctaBlock {
+        grid-template: 580px / 280px auto;
+        &__paragraph {
+            font-size: 24px;
+        }
+    }
+    .contactUs {
+        grid-template: 580px / auto 280px;
+        &__heading {
+            font-size: 44px;
+            padding-bottom: 2px;
+        }
+        &__paragraph {
+            font-size: 24px;
+            line-height: 40px;
+        }
+    }
+    .footer {
+        grid-template: 260px 60px / 250px auto;
+        &__info {
+            padding: 48px 29px 0 30px;
+        }
+        &__copy {
+            padding: 20px 0 0 68px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        .header {
+            &__btn {
+                &:hover {
+                    font-size: 14px; 
+                    background: #62D0DF;
+                }
+            } 
+        }
+        &__btns {
+            &_withBg {
+                &:hover {
+                    font-size: 16px; 
+                }
+            }
+            &_noBg {
+
+                &:hover {
+                    font-size: 16px; 
+                }
+            }
+        }
+    }
+    .whyThrive {
+        flex-direction: column;
+        &__img {
+            flex-basis: 300px;
+        }
+    }
+    .aboutUs {
+        &__squares {
+            grid-template: auto auto / repeat(2, 50%);
+        }
+        &__item {
+            font-size: 36px;
+        }
+    }
+    .list {
+        grid-template: repeat(3, auto) / repeat(2, calc( 50%));
+    }
+    .infoCards {
+        grid-template: repeat(3, auto) / repeat(2, 50%);
+    }
+    .shouldKnow, .contactUs {
+        grid-template: 400px 500px / auto;
+    }
+    .contactUs__img {
+        order: -1;
+    }
+    .footer {
+        grid-template: 250px 80px / auto;
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        .header {
+            padding: 27px 10px 0 10px;
+        }
+        &__img {
+            height: 500px;
+        }
+        &__frame {
+            height: 100%;
+        }
+        &__content {
+            text-align: center;
+            margin: 130px 0 0 0;
+            padding: 0 10px;
+            width: 100%;
+        }
+        &__title {
+            font-size: 31px;
+            padding-bottom: 50px;
+        }
+        &__subtitle {
+            font-size: 19px;
+            line-height: 32px;
+        }
+        &__btns {
+            column-gap: 0;
+            justify-content: space-around;
+        }
+    }
+    .aboutUs {
+        &__paragraph {
+        width: 100%;
+        padding: 50px 10px 76px 10px;
+        text-align: center;
+        }
+        &__item {
+            font-size: 20px;
+        }
+    }
+    .list {
+        grid-template: repeat(6, auto) / 100%;
+        &__square {
+            @include background;
+            &_first {
+                background-image: 
+                    linear-gradient(to top, rgba(34, 53, 111, 0.6), rgba(34, 53, 111, 0.6)),
+                    url('../../img/list/PhysicalHealth.jpg');
+            }
+            &_second {
+                background-image: 
+                    linear-gradient(to top, rgba(0, 82, 193, 0.6), rgba(0, 82, 193, 0.6)),
+                    url('../../img/list/MentalHealth.jpg');
+            }
+            &_third {
+                background-image: 
+                    linear-gradient(to top, rgba(118, 181, 139, 0.6), rgba(118, 181, 139, 0.6)),
+                    url('../../img/list/Nutrition.png');
+            }
+            &_fourth {
+                background-image: 
+                    linear-gradient(to top, rgba(98, 208, 223, 0.6), rgba(98, 208, 223, 0.6)),
+                    url('../../img/list/Gymnastics.jpg');
+            }
+            &_fifth {
+                background-image: 
+                    linear-gradient(to top, rgba(222, 225, 255, 0.6), rgba(222, 225, 255, 0.6)),
+                    url('../../img/list/Crossfit.jpg');
+            }
+            &_sixth{
+                background-image: 
+                    linear-gradient(to top, rgba(143, 0, 255, 0.6), rgba(143, 0, 255, 0.6)),
+                    url('../../img/list/Aerobics.jpg');
+            }
+        }
+    }
+    .infoCards {
+        grid-template: repeat(6, auto) / 100%;
+    }
+    .shouldKnow, .contactUs {
+        grid-template: 300px 500px / auto;
+    }
+    .ctaBlock {
+        &__text {
+            padding: 64px 10px 50px 10px;
+        }
+    }
+    .contactUs {
+        &__heading {
+        font-size: 38px;
+        }
+    }
+    .footer {
+        grid-template: auto 80px / auto;
+        &__info {
+            row-gap: 40px;
+            padding-bottom: 48px;
+            &-block {
+                width: 100%;
+            }
+            &-title {
+                padding-bottom: 8px;
+            }
+        }
+    }
+}

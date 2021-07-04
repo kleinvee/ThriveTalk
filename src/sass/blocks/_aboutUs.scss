@@ -29,14 +29,13 @@
     }
     &__squares {
         display: grid;
-        grid-template: 360px / repeat(4, 1fr);
-        
+        grid-template: auto / repeat(4, 25%);
     }
     &__divider {
         @include divider;
     }
     &__square {
-        padding: 70px 52px 0 52px;
+        padding: 52px;
         &_pink {
             background: #FFE2DE;
         }

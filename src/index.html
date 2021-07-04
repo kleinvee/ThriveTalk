@@ -47,16 +47,6 @@
     <section class="promo">
         <header class="header">
             <div href="#" class="header__logo">Thrivetalk</div>
-            <div class="header__menu">
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Blog</li>
-                    </ul>
-                </nav>
-            </div>
             <div class="header__btn">CONTACT US</div>
         </header>
         <div class="promo__content">
@@ -66,7 +56,9 @@
                 <div class="promo__btns_withBg">WHO AM I</div>
                 <div class="promo__btns_noBg">WHAT DO I DO</div>
             </div>
-            <img src="img/promo_img.png" class="promo__img" alt="promo_img">
+            <div class="promo__img">
+                <img src="img/promo_photo_frame.png" class="promo__frame" alt="promo_photo_frame">
+            </div>
         </div>
     </section>
 
@@ -87,22 +79,22 @@
         </div>
         <div class="aboutUs__subtitle">WE CAN HELP YOU WITH</div>
         <div class="aboutUs__squares">
-            <div class="aboutUs__square aboutUs__square_pink">
+            <div class="aboutUs__square aboutUs__square_pink height_adjustment">
                 <div class="aboutUs__divider"></div>
                 <div class="aboutUs__item">Weight Lifting</div>
             </div>
 
-            <div class="aboutUs__square aboutUs__square_green">
+            <div class="aboutUs__square aboutUs__square_green height_adjustment">
                 <div class="aboutUs__divider"></div>
                 <div class="aboutUs__item">Running  & Spinning</div>
             </div>
 
-            <div class="aboutUs__square aboutUs__square_light-blue">
+            <div class="aboutUs__square aboutUs__square_light-blue height_adjustment">
                 <div class="aboutUs__divider"></div>
                 <div class="aboutUs__item">Pumping Iron</div>
             </div>
 
-            <div class="aboutUs__square aboutUs__square_blue">
+            <div class="aboutUs__square aboutUs__square_blue height_adjustment">
                 <div class="aboutUs__divider"></div>
                 <div class="aboutUs__item">Flexibility Development</div>
             </div>
@@ -110,32 +102,32 @@
     </section>
 
     <section class="list">
-        <div class="list__square list__square_first">
+        <div class="list__square list__square_first height_adjustment">
             <div class="list__divider"></div>
             <div class="list__item">Physical <br> Health</div>
         </div>
 
-        <div class="list__square list__square_second">
+        <div class="list__square list__square_second height_adjustment">
             <div class="list__divider"></div>
             <div class="list__item">Mental <br> Health</div>
         </div>
 
-        <div class="list__square list__square_third">
+        <div class="list__square list__square_third height_adjustment">
             <div class="list__divider"></div>
             <div class="list__item">Nutrition</div>
         </div>
 
-        <div class="list__square list__square_fourth">
+        <div class="list__square list__square_fourth height_adjustment">
             <div class="list__divider"></div>
             <div class="list__item">Gymnastics</div>
         </div>
 
-        <div class="list__square list__square_fifth">
+        <div class="list__square list__square_fifth height_adjustment">
             <div class="list__divider"></div>
             <div class="list__item">Crossfit</div>
         </div>
 
-        <div class="list__square list__square_sixth">
+        <div class="list__square list__square_sixth height_adjustment">
             <div class="list__divider"></div>
             <div class="list__item">Aerobics</div>
         </div>
@@ -197,15 +189,16 @@
     </section>
 
     <section class="contactUs ctaBlock">
-        <div class="contactUs__img ctaBlock__img"></div>
         <div class="contactUs__text ctaBlock__text">
             <div class="contactUs__title ctaBlock__title">YOU SHOULD ALSO KNOW</div>
-            <div class="contactUs__heading">Ready. Set. Smile</div>
-            <div class="contactUs__paragraph ctaBlock__paragraph">
-                Take the free online assessment to see if you are a candidate and get started on your journey.
+            <div>
+                <div class="contactUs__heading">Ready. Set. Smile</div>
+                <div class="contactUs__paragraph ctaBlock__paragraph">
+                Take the free online assessment to see if you are a candidate and get started on your journey.</div>
             </div>
             <div class="contactUs__btn ctaBlock__btn">GET HELP NOW</div>
         </div>
+        <div class="contactUs__img ctaBlock__img"></div>
     </section>
 
     <footer class="footer">
@@ -241,9 +234,12 @@
         <div class="footer__copy">
             <span>© </span>  Copyright - ThriveTalk  2017
         </div>
-    </footer>
+    </footer> 
 
-
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

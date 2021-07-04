@@ -1,11 +1,11 @@
 .list {
     display: grid;
-    grid-template: repeat(2, 480px) / repeat(3, 1fr);
+    grid-template: repeat(2, auto) / repeat(3, calc( 100% / 3));
     &__divider {
         @include divider;
     }
     &__square {
-        padding: 95px 70px 0 70px;
+        padding: 65px;
         &_first {
             background: #22356F;
             &:hover {

@@ -12,27 +12,6 @@
             line-height: 37px;
             letter-spacing: -0.035em;
         }
-        &__menu {
-            nav {
-                ul {
-                    list-style-type: none;
-                    display: flex;
-                    column-gap: 13px;
-                    font-size: 14px;
-                    line-height: 16px;
-                    color: #22356F;
-                    margin-bottom: 0;
-                    li {
-                        padding: 14px 7px;
-                        cursor: pointer;
-                        &:hover {
-                            border-bottom: 2px solid #22356F;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
-        }
         &__btn {
             width: 150px;
             height: 50px;
@@ -56,6 +35,7 @@
         top: 0;
         right: 0;
         z-index: -1;
+        background: url('../../img/promo_img.png') center (center/cover) no-repeat;
     }
     &__content {
         margin: 228px 0 0 179px;
