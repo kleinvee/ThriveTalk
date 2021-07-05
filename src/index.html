@@ -47,14 +47,14 @@
     <section class="promo">
         <header class="header">
             <div href="#" class="header__logo">Thrivetalk</div>
-            <div class="header__btn">CONTACT US</div>
+            <div class="header__btn open-modal" data-modal="#modal1">CONTACT US</div>
         </header>
         <div class="promo__content">
             <h1 class="promo__title">HELPING YOU THRIVE IN ALL AREAS OF LIFE</h1>
             <div class="promo__subtitle">Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</div>
             <div class="promo__btns">
-                <div class="promo__btns_withBg">WHO AM I</div>
-                <div class="promo__btns_noBg">WHAT DO I DO</div>
+                <div class="promo__btns_withBg open-modal" data-modal="#modal1">WHO AM I</div>
+                <div class="promo__btns_noBg open-modal" data-modal="#modal1">WHAT DO I DO</div>
             </div>
             <div class="promo__img">
                 <img src="img/promo_photo_frame.png" class="promo__frame" alt="promo_photo_frame">
@@ -184,7 +184,7 @@
             <div class="shouldKnow__paragraph ctaBlock__paragraph">
                 MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. We at <span>ThriveTalk</span> can help you.
             </div>
-            <div class="shouldKnow__btn ctaBlock__btn">GET HELP NOW</div>
+            <div class="shouldKnow__btn ctaBlock__btn open-modal" data-modal="#modal1">GET HELP NOW</div>
         </div>
     </section>
 
@@ -196,7 +196,7 @@
                 <div class="contactUs__paragraph ctaBlock__paragraph">
                 Take the free online assessment to see if you are a candidate and get started on your journey.</div>
             </div>
-            <div class="contactUs__btn ctaBlock__btn">GET HELP NOW</div>
+            <div class="contactUs__btn ctaBlock__btn open-modal" data-modal="#modal1">GET HELP NOW</div>
         </div>
         <div class="contactUs__img ctaBlock__img"></div>
     </section>
@@ -235,6 +235,16 @@
             <span>© </span>  Copyright - ThriveTalk  2017
         </div>
     </footer> 
+
+    <div class='modal' id='modal1'>
+        <div class='content'>
+            <h1 class='title'>This is a modal</h1>
+            <p>
+                    Here is some text and stuff. cool cool	
+            </p>
+            <a class='btn close-modal' data-modal="#modal1" href="#">K Bye</a>
+        </div>	
+    </div>	
 
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
